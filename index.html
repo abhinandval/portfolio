@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinand Valasseri | Software Engineer Portfolio</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Define the Inter font family */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Custom styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* Dark background */
+            color: #c9d1d9; /* Light text */
+        }
+        .header-bg {
+            background-color: #161b22; /* Slightly lighter dark background for header */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(8px);
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-text {
+            /* Text color using a blue-to-green gradient (for highlights) */
+            background-image: linear-gradient(to right, #60a5fa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Style for the main container to ensure it looks good on all devices */
+        #main-content {
+            padding-top: 5rem; /* Space for fixed header */
+        }
+    </style>
+</head>
+<body class="fade-in">
+
+    <!-- Fixed Navigation Header -->
+    <header class="header-bg fixed top-0 left-0 right-0 z-10 border-b border-[#30363d]">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold gradient-text">A. VALASSERI</h1>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#about" class="text-sm font-medium hover:text-green-400 transition">About</a>
+                <a href="#skills" class="text-sm font-medium hover:text-green-400 transition">Skills</a>
+                <a href="#experience" class="text-sm font-medium hover:text-green-400 transition">Experience</a>
+                <a href="#contact" class="text-sm font-medium hover:text-green-400 transition">Contact</a>
+            </div>
+            <!-- Mobile Menu Placeholder - No JS implementation needed for simplicity -->
+            <button class="md:hidden text-gray-400 hover:text-white transition">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+
+        <!-- 1. Hero / About Section -->
+        <section id="about" class="py-16 md:py-24 space-y-8">
+            <div class="max-w-3xl">
+                <h2 class="text-sm uppercase tracking-widest text-green-400 mb-2">Hello, I'm</h2>
+                <h1 class="text-5xl sm:text-7xl font-extrabold text-white leading-tight">
+                    Abhinand <span class="gradient-text">Valasseri</span>
+                </h1>
+                <p class="text-xl sm:text-2xl mt-4 text-gray-400">
+                    SDE 3 at Admitkard | Experienced Mobile & Full-Stack Software Engineer
+                </p>
+            </div>
+            <div class="card p-6 rounded-xl">
+                <h3 class="text-2xl font-semibold mb-3 text-white">Summary</h3>
+                <p class="text-gray-300 leading-relaxed">
+                    Experienced software engineer with proficiency in developing and deploying mobile apps in both Android and iOS platforms using Native Android and Flutter frameworks. Experienced in integration of SaaS and PaaS solutions like Firebase and Google Cloud Platform and automated CI/CD for seamless deployment. Currently based in Kerala, India.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. Skills Section -->
+        <section id="skills" class="py-16 border-t border-[#30363d]">
+            <h2 class="text-4xl font-bold mb-10 text-white">Core Skills & Tools</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <!-- Main Technologies -->
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="smartphone" class="w-8 h-8 text-green-400 mb-2"></i>
+                    <span class="text-sm font-medium">Flutter/Dart</span>
+                </div>
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="android" class="w-8 h-8 text-green-400 mb-2"></i>
+                    <span class="text-sm font-medium">Native Android</span>
+                </div>
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="layers-3" class="w-8 h-8 text-green-400 mb-2"></i>
+                    <span class="text-sm font-medium">React Native</span>
+                </div>
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="cloud" class="w-8 h-8 text-green-400 mb-2"></i>
+                    <span class="text-sm font-medium">Firebase/GCP</span>
+                </div>
+                <!-- Specific Expertise -->
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="split" class="w-8 h-8 text-blue-400 mb-2"></i>
+                    <span class="text-sm font-medium">CI/CD Automation</span>
+                </div>
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="scan" class="w-8 h-8 text-blue-400 mb-2"></i>
+                    <span class="text-sm font-medium">Google Tag Manager</span>
+                </div>
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="code" class="w-8 h-8 text-blue-400 mb-2"></i>
+                    <span class="text-sm font-medium">Software Design</span>
+                </div>
+                <div class="card p-4 rounded-lg flex flex-col items-center">
+                    <i data-lucide="box" class="w-8 h-8 text-blue-400 mb-2"></i>
+                    <span class="text-sm font-medium">Web3JS/React</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Experience Section -->
+        <section id="experience" class="py-16 border-t border-[#30363d]">
+            <h2 class="text-4xl font-bold mb-10 text-white">Professional Experience</h2>
+            <div class="space-y-8">
+
+                <!-- Job 1: AdmitKard -->
+                <div class="card p-6 rounded-xl">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold gradient-text">AdmitKard</h3>
+                        <span class="text-sm text-gray-400">Oct 2024 – Present (SDE 3) | Jul 2022 – Dec 2024 (SDE 2)</span>
+                    </div>
+                    <p class="text-lg font-medium text-white mb-3">Software Development Engineer III (SDE 3)</p>
+                    <p class="text-sm text-gray-400 italic">Noida, Uttar Pradesh, India</p>
+                </div>
+
+                <!-- Job 2: Taught Mobile App (Acquired by AdmitKard) -->
+                <div class="card p-6 rounded-xl">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold gradient-text">Taught Mobile App (Flutter)</h3>
+                        <span class="text-sm text-gray-400">Jan 2022 – Jun 2022</span>
+                    </div>
+                    <p class="text-lg font-medium text-white mb-3">Lead Flutter Developer</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>Led Flutter infrastructure for Android and iOS platforms.</li>
+                        <li>Implemented *Taught TV* (similar to YT Shorts/Insta Reels) for concept videos.</li>
+                        <li>Integrated real-time crash detection and analytics using Firebase.</li>
+                        <li>Developed a secure, tamper-free course video player using VdoCipher.</li>
+                    </ul>
+                </div>
+
+                <!-- Job 3: Hamon Techonologies / Lycaeum -->
+                <div class="card p-6 rounded-xl">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold gradient-text">Hamon Techonologies (Vertical of Lycaeum)</h3>
+                        <span class="text-sm text-gray-400">Aug 2021 – Jan 2022</span>
+                    </div>
+                    <p class="text-lg font-medium text-white mb-3">Junior Software Engineer II / Tech Lead</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>**ShopKi (Flutter):** Tech Lead for ONDC Platform infrastructure (Web, Android, iOS).</li>
+                        <li>**GibLib (Flutter):** Integrated cloud-based automatic CI/CD for seamless deployment of the medical education platform.</li>
+                        <li>**Amana (React Native):** Project Manager & Engineer, managed Arabic translation and deployment to app stores.</li>
+                        <li>**SchrootNFT (React/Web3JS):** Lead React developer, created WebApp from scratch for NFT minting and staking.</li>
+                    </ul>
+                </div>
+                
+                <!-- Job 4: Lycaeum (Genskill App) -->
+                <div class="card p-6 rounded-xl">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-2">
+                        <h3 class="text-2xl font-semibold gradient-text">Lycaeum (Genskill App)</h3>
+                        <span class="text-sm text-gray-400">Jan 2020 – Jul 2021</span>
+                    </div>
+                    <p class="text-lg font-medium text-white mb-3">Lead Flutter Developer</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 ml-4">
+                        <li>Developed the Genskill App from scratch using Flutter/Dart (null-safe).</li>
+                        <li>Achieved **25K+ users** (Google Play) and **10K+ users** (iOS App Store).</li>
+                        <li>Automated cloud deployment and integrated in-app payments (Razorpay/Cashfree).</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Projects & Education Section -->
+        <section class="grid md:grid-cols-2 gap-8 py-16 border-t border-[#30363d]">
+            
+            <!-- Projects/Publications -->
+            <div>
+                <h2 class="text-4xl font-bold mb-10 text-white">Publications & Projects</h2>
+                <div class="space-y-6">
+                    <div class="card p-5 rounded-xl">
+                        <h3 class="text-xl font-semibold text-white">Presentation on Blockchain Technology</h3>
+                        <p class="text-gray-400 mt-1">Academic presentation on the fundamentals and applications of Blockchain.</p>
+                    </div>
+                    <div class="card p-5 rounded-xl">
+                        <h3 class="text-xl font-semibold text-white">Flutter: Upgrade your TextFields with autofill in 2 steps.</h3>
+                        <p class="text-gray-400 mt-1">Technical article/presentation detailing Flutter development best practices.</p>
+                    </div>
+                    <div class="card p-5 rounded-xl">
+                        <h3 class="text-xl font-semibold text-white">VSafe (Native Android)</h3>
+                        <p class="text-gray-400 mt-1">App for live location tracking, Geofence integration, and emergency SOS button. (Lead Android Developer, 2019)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div id="education">
+                <h2 class="text-4xl font-bold mb-10 text-white">Education</h2>
+                <div class="space-y-6">
+                    <div class="card p-5 rounded-xl">
+                        <h3 class="text-xl font-semibold text-white">MCA, Computer Programming</h3>
+                        <p class="text-gray-400">MACFAST (Mar Athanasios College for Advanced Studies Tiruvalla)</p>
+                        <p class="text-sm text-green-400 mt-1">2017 - 2019</p>
+                    </div>
+                    <div class="card p-5 rounded-xl">
+                        <h3 class="text-xl font-semibold text-white">BCA, Computer Programming, Specific Applications</h3>
+                        <p class="text-gray-400">ST. JOSEPH'S COLLEGE, DEVAGIRI</p>
+                        <p class="text-sm text-green-400 mt-1">2014 - 2017</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 5. Footer / Contact Section -->
+    <footer id="contact" class="header-bg py-12 border-t border-[#30363d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-4 text-white">Get In Touch</h2>
+            <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+                I am currently open to new opportunities and collaborations. Feel free to connect with me.
+            </p>
+
+            <div class="flex justify-center flex-wrap gap-6 mb-8">
+                <a href="mailto:abhinandval@gmail.com" class="card p-4 rounded-lg flex items-center space-x-2 hover:bg-[#23262d] transition">
+                    <i data-lucide="mail" class="w-5 h-5 text-green-400"></i>
+                    <span class="text-sm font-medium">abhinandval@gmail.com</span>
+                </a>
+                <a href="tel:+918075609754" class="card p-4 rounded-lg flex items-center space-x-2 hover:bg-[#23262d] transition">
+                    <i data-lucide="phone" class="w-5 h-5 text-green-400"></i>
+                    <span class="text-sm font-medium">+91 8075609754</span>
+                </a>
+                <a href="https://www.linkedin.com/in/abhinandv" target="_blank" rel="noopener noreferrer" class="card p-4 rounded-lg flex items-center space-x-2 hover:bg-[#23262d] transition">
+                    <i data-lucide="linkedin" class="w-5 h-5 text-green-400"></i>
+                    <span class="text-sm font-medium">LinkedIn Profile</span>
+                </a>
+            </div>
+
+            <p class="text-sm text-gray-500 mt-8">
+                &copy; 2025 Abhinand Valasseri. Built with pure HTML, CSS (Tailwind), and JS.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Simple JavaScript for Lucide Icons -->
+    <script>
+        // Initialize Lucide Icons for all elements with data-lucide attribute
+        lucide.createIcons();
+
+        // Simple smooth scrolling for mobile/desktop menu functionality (optional, but good practice)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                // Only prevent default if it's an internal hash link
+                if (this.getAttribute('href').length > 1) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
