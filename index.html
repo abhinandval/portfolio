@@ -3,7 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO Meta Tags -->
     <title>Abhinand Valasseri | Senior Frontend & GenAI Engineer</title>
+    <meta
+      name="title"
+      content="Abhinand Valasseri | Senior Frontend & GenAI Engineer"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Abhinand Valasseri, a Senior Software Engineer specializing in UI Architecture, System Design, Next.js, and GenAI pipelines. 6+ years of experience building scalable web and mobile solutions."
+    />
+    <meta
+      name="keywords"
+      content="Abhinand Valasseri, Senior Software Engineer, Frontend Engineer, UI Architect, Next.js, React, GenAI, System Design, Flutter, Developer Experience, Noida, Kerala"
+    />
+    <meta name="author" content="Abhinand Valasseri" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://abhinandv.dev/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://abhinandv.dev/" />
+    <meta
+      property="og:title"
+      content="Abhinand Valasseri | Senior Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Senior Software Engineer specializing in UI Platforms, System Design, and GenAI pipelines."
+    />
+    <meta property="og:image" content="og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://abhinandv.dev/" />
+    <meta
+      property="twitter:title"
+      content="Abhinand Valasseri | Senior Software Engineer"
+    />
+    <meta
+      property="twitter:description"
+      content="Senior Software Engineer specializing in UI Platforms, System Design, and GenAI pipelines."
+    />
+    <meta property="twitter:image" content="og-twitter.png" />
+
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +59,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Abhinand Valasseri",
+        "jobTitle": "Senior Software Engineer",
+        "url": "https://abhinandv.dev",
+        "sameAs": [
+          "https://www.linkedin.com/in/abhinandv",
+          "https://github.com/abhinandv"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Next.js",
+          "React",
+          "System Design",
+          "GenAI",
+          "Flutter",
+          "UI Architecture"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kozhikode",
+          "addressRegion": "Kerala",
+          "addressCountry": "India"
+        }
+      }
+    </script>
+
     <style>
       :root {
         --bg-color: #0f172a;
@@ -443,7 +519,7 @@
     <header>
       <div class="container">
         <nav>
-          <div class="logo">Abhinand<span>.</span></div>
+          <a href="#" class="logo" aria-label="Home">Abhinand<span>.</span></a>
           <div class="nav-links">
             <a href="#hero">Home</a>
             <a href="#skills">Skills</a>
@@ -451,9 +527,9 @@
             <a href="#projects">Work</a>
             <a href="#contact">Contact</a>
           </div>
-          <div class="hamburger">
+          <button class="hamburger" aria-label="Toggle navigation menu">
             <i class="fas fa-bars"></i>
-          </div>
+          </button>
         </nav>
       </div>
     </header>
@@ -476,6 +552,7 @@
               href="#"
               class="btn btn-outline"
               onclick="alert('This would trigger a PDF download of the resume.')"
+              aria-label="Download CV"
               >Download CV</a
             >
           </div>
@@ -802,7 +879,10 @@
             <i class="fas fa-phone"></i> +91 8075609754
           </div>
           <br />
-          <a href="mailto:hello@abhinandv.dev" class="btn btn-primary"
+          <a
+            href="mailto:hello@abhinandv.dev"
+            class="btn btn-primary"
+            aria-label="Send Email"
             >Send Email</a
           >
         </div>
